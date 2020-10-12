@@ -29,7 +29,7 @@ client.on('message', async(message) => {
 
     if(command == 'help') {
         let prefix = client.config.prefix;
-        message.channel.send(`**Command Help | [Required] {Optional}**\r${prefix}ping: Sends ping of client.\r${prefix}help: Returns command info.`);
+        return message.channel.send(`**Command Help | [Required] {Optional}**\r${prefix}ping: Returns the bot's ping.\r${prefix}help: Returns command info.`);
     }
 
 });
